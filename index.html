@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Carros 1990/2000</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header>
+    <h1>Seu carro preferido de 1990</h1>
+  </header>
+
+  <div class="video-fundo-container">
+    <video autoplay muted loop playsinline class="video-fundo">
+      <source src="vid.mp4" type="video/mp4">
+      Seu navegador não suporta vídeos de fundo.
+    </video>
+    <div class="overlay-escuro"></div>
+  </div>
+
+  <!-- SEU CONTEÚDO NORMAL DA PÁGINA -->
+  
+  <main>
+    <div class="cartao">
+      <h2>Carros anos 90</h2>
+
+      <!-- IMAGEM CENTRAL (Usa uma foto de exemplo que já funciona, mas podem trocar o link) -->
+      <div class="area-imagem">
+        <img 
+          src="bruno.jpg"
+          alt="Um Barracão de carros" 
+          class="foto-destaque"
+        >
+      </div>
+
+      <p>Melhores carros sairam no anos 90 a 2000</p>
+
+      <!-- FORMULÁRIO INTERATIVO -->
+      <form>
+        <h3>Participe da Enquete</h3>
+
+        <p>
+          <label for="nome-visitante">Seu Nome:</label>
+          <input type="text" id="nome-visitante" placeholder="Digite seu nome">
+        </p>
+
+        <!-- Exemplo de RADIO (Escolha ÚNICA) -->
+        <fieldset>
+          <legend>1. Escolha um carro favorito:</legend>
+    
+       <div class="opcao-carro">
+  <input type="radio" id="op1" name="favorito" value="opcao1">
+  <label for="op1">
+    <img src="santana.jpg" alt="Santana e Santana Quantum">
+    <span>Santana e Santana Quantum</span>
+  </label>
+</div>
+
+  <div class="opcao-carro">
+    <input type="radio" id="op2" name="favorito" value="opcao2">
+    <label for="op2">
+      <img src="kadett.jpg" width="200" alt="Kadett e Kadett GSi">
+      <span>Kadett e Kadett GSi</span>
+    </label>
+  </div>
+
+  <div class="opcao-carro">
+    <input type="radio" id="op3" name="favorito" value="opcao3">
+    <label for="op3">
+      <img src="monza.jpg" width="200" alt="Monza">
+      <span>Monza</span>
+    </label>
+  </div>
+
+  <div class="opcao-carro">
+    <input type="radio" id="op4" name="favorito" value="opcao4">
+    <label for="op4">
+      <img src="corsa.jpg" width="200" alt="Corsa Wind e Corsa Sedan / Wagon">
+      <span>Corsa Wind e Corsa Sedan / Wagon</span>
+    </label>
+  </div>
+
+  <div class="opcao-carro">
+    <input type="radio" id="op5" name="favorito" value="opcao5">
+    <label for="op5">
+      <img src="chevette.jpg" width="200" alt="Chevette DL / Júnior">
+      <span>Chevette DL / Júnior</span>
+    </label>
+  </div>
+
+  <div class="opcao-carro">
+    <input type="radio" id="op6" name="favorito" value="opcao6">
+    <label for="op6">
+      <img src="opala.jpg" width="200" alt="Opala Diplomata/Comodoro">
+      <span>Opala Diplomata/Comodoro</span>
+    </label>
+  </div>
+
+  <div class="opcao-carro">
+    <input type="radio" id="op7" name="favorito" value="opcao7">
+    <label for="op7">
+      <img src="uno.jpg" width="200" alt="Uno Mille Eletronic / EP / EX">
+      <span>Uno Mille Eletronic / EP / EX</span>
+    </label>
+  </div>
+
+  <div class="opcao-carro">
+    <input type="radio" id="op8" name="favorito" value="opcao8">
+    <label for="op8">
+      <img src="escort.jpg" width="200" alt="Escort XR3 / Hobby / Zetec">
+      <span>Escort XR3 / Hobby / Zetec</span>
+    </label>
+  </div>
+
+  <div class="opcao-carro">
+    <input type="radio" id="op9" name="favorito" value="opcao9">
+    <label for="op9">
+      <img src="delrey.jpg" width="200"  alt="Del Rey">
+      <span>Del Rey</span>
+    </label>
+  </div>
+
+  <div class="opcao-carro">
+    <input type="radio" id="op10" name="favorito" value="opcao10">
+    <label for="op10">
+      <img src="pointer.jpg" width="200" alt="Pointer">
+      <span>Pointer</span>
+    </label>
+  </div>
+</form>
+        
+        
+        
+        </fieldset>
+
+        <!-- Exemplo de CHECKBOX (Escolha MÚLTIPLA - Novidade!) -->
+        <fieldset>
+          <legend>2. Marque TODAS as opções que você gosta (Checkbox):</legend>
+
+          <input type="checkbox" id="check1" name="interesses" value="item1">
+          <label for="check1">Gosto de tecnologia e jogos</label><br>
+
+          <input type="checkbox" id="check2" name="interesses" value="item2">
+          <label for="check2">Gosto de filmes e séries</label><br>
+
+          <input type="checkbox" id="check3" name="interesses" value="item3">
+          <label for="check3">Gosto de música e esportes</label>
+        </fieldset>
+
+        <button type="submit">Enviar Respostas</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>Atividade de fixação de CSS - 2026</p>
+  </footer>
+
+</body>
+</html>

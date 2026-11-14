@@ -1,0 +1,107 @@
+/* ==========================================
+   1. VÍDEO DE FUNDO (Novo)
+   ========================================== */
+.video-fundo-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -2; /* Joga o vídeo para trás de tudo */
+}
+
+.video-fundo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.overlay-escuro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65); /* Película escura para legibilidade */
+  z-index: -1;
+}
+
+/* ==========================================
+   2. ESTILO DA PÁGINA E TEXTOS
+   ========================================== */
+body {
+  /* Tiramos o background-color sólido para o vídeo aparecer */
+  color: #FFFFFF;                 
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+/* 3. Estilo dos títulos */
+h1, h2, h3 {
+  color: #ffffff;                 
+}
+
+/* 4. Caixa do cartão */
+.cartao {
+  background-color: rgba(30, 30, 30, 0.9); /* Leve transparência para ver o fundo */
+  border: 2px solid #FFFFFF;      
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* 5. Imagem central */
+.area-imagem {
+  text-align: right;
+}
+
+.foto-destaque { 
+  width: 250px;                   
+}
+
+/* 6. Foco do teclado (NÃO APAGAR) */
+input:focus, button:focus {
+  outline: 4px solid #00FFFF;
+}
+
+/* ==========================================
+   7. OPÇÕES DE CARROS (RÁDIO)
+   ========================================== */
+.opcao-carro {
+  display: flex;
+  align-items: center;
+  background-color: rgba(18, 18, 18, 0.85); /* Fundo escuro leve para manter o contraste */
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+}
+
+.opcao-carro input[type="radio"] {
+  margin-right: 15px;
+  transform: scale(1.4); /* Aumenta um pouco a bolinha de seleção */
+  cursor: pointer;
+}
+
+.opcao-carro label {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Espaço entre a foto e o nome do carro */
+  cursor: pointer;
+  width: 100%;
+}
+
+.opcao-carro img {
+  width: 140px;       /* Largura fixa para todas as fotos */
+  height: 90px;       /* Altura fixa para todas as fotos */
+  object-fit: cover;  /* Corta as sobras sem esticar ou deformar o carro */
+  border-radius: 6px;
+}
