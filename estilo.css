@@ -105,3 +105,16 @@ input:focus, button:focus {
   object-fit: cover;  /* Corta as sobras sem esticar ou deformar o carro */
   border-radius: 6px;
 }
+.lista-marcas label {
+    display: inline-flex;
+    align-items: center; /* Centraliza a imagem e o texto */
+    gap: 10px;           /* Espaço entre a logo e o nome */
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.lista-marcas img {
+    width: 40px;         /* Tamanho da logo */
+    height: 40px;
+    object-fit: contain;
+}
